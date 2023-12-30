@@ -30,7 +30,7 @@ public class OrderController {
         repo.addOrderToOrderDb(order);
         return new ResponseEntity<>("New order added successfully", HttpStatus.CREATED);
     }
-
+    //useful
     @PostMapping("/add-partner/{partnerId}")
     public ResponseEntity<String> addPartner(@PathVariable String partnerId){
         repo.addPartnerToPartnerDb(partnerId);
